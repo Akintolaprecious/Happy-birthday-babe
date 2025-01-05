@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#498133, #2e1f64);
+}
+
+.container {
+  width: 30%;
+  height: 50vh;
+  border: none;
+  text-align: center;
+  padding: 1.5em 2em;
+  box-shadow: 0 0.5em 1em;
+  overflow: hidden;
+}
+
+.animate-text {
+  font-family: "Bree Serif", serif;
+  font-size: 1rem;
+  color: #1d1b1b;
+  font-style: italic;
+}
+
+.header-text {
+  font-size: 1.8rem;
+  font-family: "Bree Serif", serif;
+  margin-top: 0.3em;
+  text-decoration: underline;
+  margin-top: 0.7em;
+  color: aquamarine;
+}
+
+#input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.7em;
+  border: none;
+}
+
+#input-box input[type="text"] {
+  width: 80%;
+  padding: 1em;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 16px;
+  border: none;
+}
+
+#input-box input[type="text"]:focus {
+  outline: none;
+}
+
+#input-box input[type="text"]::placeholder {
+  font-family: "Bree Serif", sans-serif;
+  font-size: 1.5rem;
+}
+
+#input-box button {
+  background-color: #198754;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 0px 8px 8px 5px;
+}
+
+#result-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result-box p {
+  width: 50%;
+  background-color: #e9ecef;
+  font-family: "Bree Serif", sans-serif;
+  padding: 1.3em 0.5em;
+  border-radius: 8px;
+  border: none;
+  margin-top: 2.5em;
+}
+
+@media screen and (max-width: 1114px) {
+  .container {
+    width: 50%;
+    height: 45vh;
+  }
+
+  #input-box input[type="text"] {
+    width: 60%;
+  }
+
+  #input-box button {
+    padding: 1.05em;
+    font-size: 16px;
+  }
+
+  /* For tablets: */
+  @media screen and (max-width: 900px) {
+    .container {
+      width: 50%;
+      height: 45vh;
+    }
+    .header-text {
+      font-size: 1.3rem;
+    }
+
+    #input-box input[type="text"] {
+      width: 60%;
+      padding: 1em;
+    }
+
+    #input-box input[type="text"]::placeholder {
+      font-size: 1.2rem;
+    }
+
+    #input-box button {
+      padding: 1.05em;
+      font-size: 16px;
+    }
+
+    #result-box p {
+      width: 70%;
+    }
+  }
+
+  /* For mobile: */
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 70%;
+      height: 40vh;
+    }
+
+    .header-text {
+      margin-top: 0.5em;
+      font-size: 1.1rem;
+    }
+
+    #input-box input[type="text"] {
+      width: 100%;
+    }
+
+    #input-box button {
+      padding: 1.05em;
+      font-size: 16px;
+    }
+
+    #result-box p {
+      width: 60%;
+    }
+  }
+}
