@@ -26,7 +26,7 @@ function showGrade() {
       } else if (inputScore >= 40) {
         grade = "D- Pass😒";
         gradeSoundD.play();
-      } else {
+      } else  {
         grade = "F- Fail🙁";
         gradeSoundD.play("audios/gerarahere.mp3");
       }
